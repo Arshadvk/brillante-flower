@@ -1,299 +1,249 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Blog</title>
 	<meta charset="utf-8">
 	<!-- bootstrap vs fontawesome-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="icon" href="img/favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/style-shop.css">
 	<link rel="stylesheet" type="text/css" href="css/style-res-shop.css">
 	<link rel="stylesheet" type="text/css" href="css/style-fix-nav.css">
 	<link rel="stylesheet" type="text/css" href="css/style-form-search-mobile.css">
-		<!-- slick -->
+	<!-- slick -->
 
 	<!-- GG FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
+
 <body>
-<header class="container" id="header-v3">
-	
+	<header class="container" id="header-v3">
+
 		<div class="row">
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 logo"><a href="#"><img src="img/logo.png" alt="img-holiwood"></a></div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 logo"><a href="#"><img src="img/logo.png"
+						alt="img-holiwood"></a></div>
 			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 menu-mobile">
 				<div class=" collapse navbar-collapse" id="myNavbar">
-					
-				<ul class="nav navbar-nav menu-main">
 
-					<li class="wedding-menu"><a id="home-menu" href="index.html">Home </a>
-						<figure id="home-1" class="hidden-sm hidden-xs"></figure>
-					</li>
+					<ul class="nav navbar-nav menu-main">
 
-					<li class="wedding-menu"><a href="shop.html">Shop </a>
-						<figure id="shop-1" class="hidden-sm hidden-xs"></figure>
-					</li>
+						<li class="wedding-menu"><a id="home-menu" href="index.html">Home </a>
+							<figure id="home-1" class="hidden-sm hidden-xs"></figure>
+						</li>
 
-					<li class="wedding-menu"><a href="about.html" >About Us</a>
-						<figure id="about-1" class=" hidden-sm hidden-md hidden-xs"></figure>
-					</li>
+						<li class="wedding-menu"><a href="shop.html">Shop </a>
+							<figure id="shop-1" class="hidden-sm hidden-xs"></figure>
+						</li>
 
-					<li class="contact-menu"><a id="blog-menu" href="blog.html">Blog</a>
-						<figure id="blog-1" class="hidden-sm hidden-xs"></figure>
-					</li>
+						<li class="wedding-menu"><a href="about.html">About Us</a>
+							<figure id="about-1" class=" hidden-sm hidden-md hidden-xs"></figure>
+						</li>
 
-					<li class="contact-menu"><a href="contact.html">Contact</a>
-						<figure id="contact-1" class="hidden-sm hidden-xs"></figure>
-					</li>
-						
-					<li>
-						<figure id="btn-close-menu" class="hidden-lg hidden-md"><i class="far fa-times-circle"></i>
-						</figure>
-					</li>
-				</ul>
+						<li class="contact-menu"><a id="blog-menu" href="blog.html">Blog</a>
+							<figure id="blog-1" class="hidden-sm hidden-xs"></figure>
+						</li>
+
+						<li class="contact-menu"><a href="contact.html">Contact</a>
+							<figure id="contact-1" class="hidden-sm hidden-xs"></figure>
+						</li>
+
+						<li>
+							<figure id="btn-close-menu" class="hidden-lg hidden-md"><i class="far fa-times-circle"></i>
+							</figure>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-10 col-xs-9">
-				<ul class="nav navbar-nav navbar-right icon-menu">
-					
-					
-					<li id="input-search" class="hidden-sm hidden-xs">
-				<a href="#"><img id="search-img" src="img/Search.png" alt="img-holiwood"></a>
-				
-					</li>
-					<li class="icon-user hidden-sm hidden-xs"><a href="#"><i class="far fa-user"></i></a></li>
-					<li class="dropdown cart-menu">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/cart.png" id="img-cart" alt="img-holiwood"></a>
-				<div class="dropdown-menu">
-					<div class="cart-1">
-						<div class="img-cart"><img src="img/340x420.png" class="img-responsive" alt="img-holiwood"></div>
-						<div class="info-cart">
-							<h1>Pink roses</h1>
-							<span class="number">x1</span>
-							<span class="prince-cart">$207.2</span>
-						</div>
-					</div>
-					<div class="cart-1">
-						<div class="img-cart"><img src="img/340x420.png" class="img-responsive" alt="img-holiwood"></div>
-						<div class="info-cart">
-							<h1>Eleganr by BloomNation</h1>
-							<span class="number">x1</span>
-							<span class="prince-cart">$207.2</span>
-						</div>
-					</div>
-					<div class="cart-1">
-						<div class="img-cart"><img src="img/340x420.png" class="img-responsive" alt="img-holiwood"></div>
-						<div class="info-cart">
-							<h1>Queen Rose - Yellow</h1>
-							<span class="number">x1</span>
-							<span class="prince-cart">$207.2</span>
-						</div>
-					</div>
-					<div class="total">
-						<span>Total:</span>
-						<span>$621.6</span>
-					</div>
-					<div id="div-cart-menu">
-						<a href="#">ADD TO CART</a>
-						<a href="#" class="check">CHECK VIEW</a>
-					</div>
-				</div>
-			</li>
-				</ul>
 			</div>
+
 			<div class="navbar-header mobile-menu">
-    					<button type="button" class="navbar-toggle btn-menu-mobile" data-toggle="collapse" data-target="#myNavbar">
-    					    <i class="fas fa-bars"></i>                 
-   					   	</button>
-   			</div>
+				<button type="button" class="navbar-toggle btn-menu-mobile" data-toggle="collapse"
+					data-target="#myNavbar">
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
 		</div>
-		
-</header>
-<main>
-	<div class="content-search">
 
-                            <div class="container container-100">
-                            	<i class="far fa-times-circle" id="close-search"></i>
-                                <h3 class="text-center">what are your looking for ?</h3>
-                                <form method="get" action="/search" role="search" style="position: relative;">
-                                  <input type="text" class="form-control control-search" value="" autocomplete="off" placeholder="Enter Search ..." aria-label="SEARCH" name="q">
+	</header>
+	<main>
+		<div class="container banner">
+			<figure id="banner-figure"><a href="#"><img src="img/banner/banner-shop.jpg" class="img-responsive"
+						alt="img-holiwood"></a></figure>
+			<div class="text-banner">
+				<h1>Tulips<br>Collection</h1>
+				<p>SALE UP TO 20% OFF</p>
+				<a href="#">Shop now</a>
+			</div>
+		</div>
+		<div class="container content">
+			<div class="row">
 
-                                  <button class="button_search" type="submit">search</button>
-                                </form>
-                            </div>
-                            
-</div>
-	<div class="container banner">
-		<figure id="banner-figure"><a href="#"><img src="img/banner/banner-shop.jpg" class="img-responsive" alt="img-holiwood"></a></figure>
-		<div class="text-banner">
-			<h1>Tulips<br>Collection</h1>
-			<p>SALE UP TO 20% OFF</p>
-			<a href="#">Shop now</a>
-		</div>
-	</div>
-	<div class="container content">
-		<div class="row">
-			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-				<form class="form-group">
-					<input type="text" name="input-find" placeholder="Enter your search" class="input-lg">
-					<button type="submit"><i class="fas fa-search"></i></button>
-				</form>
-			</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 menu-breadcrumb">
+					<ul class="breadcrumb">
+						<li><a href="homev3.html">Home</a></li>
+						<li><a href="#">Blogs</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-blog">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product-blog">
+						<a href="blog-post.html"><img src="img/home/blog-1.jpg" class="img-responsive"
+								alt="img-holiwood"></a>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title-blog">
+						<h2><a href="blog-post.html">The Ultimate Guide to Choosing the Perfect Flowers for Every
+								Occasion</a></h2>
 
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 menu-breadcrumb">
-				<ul class="breadcrumb">
-  					<li><a href="homev3.html">Home</a></li>
-  					<li><a href="#">Blogs</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-blog">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product-blog">
-					<a href="blog-post.html"><img src="img/440x360.png" class="img-responsive" alt="img-holiwood"></a>
+						<p>Flowers have long been a universal symbol of emotions, making them the perfect gift or décor
+							for
+							any event. For weddings, roses and lilies represent love and purity, while sunflowers and
+							daisies
+							brighten up birthday celebrations. Anniversaries often call for roses to express deep
+							passion,
+							though carnations can also mark milestones beautifully. Sympathy arrangements often feature
+							white lilies and chrysanthemums, symbolizing peace and respect. To personalize, consider
+							flower
+							colors, as red conveys love, yellow signifies joy, and white represents serenity. Choosing
+							seasonal
+							blooms ensures freshness and affordability, making every occasion more special with
+							meaningful floral
+							arrangements.</p>
+					</div>
+					<!--  -->
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product-blog">
+						<a href="#"><img src="img/home/blog-2.jpg" class="img-responsive" alt="img-holiwood"></a>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title-blog">
+						<h2><a href="#">10 Beautiful Indoor Plants That Double as Air Purifiers</a></h2>
+						<p>Indoor plants not only enhance home aesthetics but also improve air quality, making them an
+							essential addition to modern living spaces. Peace lilies, snake plants, and spider plants
+							are top choices for beginners due to their low maintenance and air-purifying properties.
+							Aloe vera doubles as a medicinal plant, while the bamboo palm adds a tropical vibe.
+							Chrysanthemums bring bursts of color while removing toxins, and English ivy is perfect for
+							compact spaces. Proper care, including adequate light and watering, ensures these plants
+							thrive. By incorporating such greenery, you create a healthier, more serene indoor
+							environment effortlessly.</p>
+					</div>
+					<!--  -->
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product-blog">
+						<a href="#"><img src="img/home/blog-3.jpg" class="img-responsive" alt="img-holiwood"></a>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title-blog">
+						<h2><a href="#">Seasonal Flowers: What's in Bloom Throughout the Year</a></h2>
+						<p>Seasonal flowers offer the perfect combination of beauty, freshness, and sustainability,
+							allowing you to enjoy nature’s best all year round. Spring brings vibrant tulips, daffodils,
+							and cherry blossoms, while summer boasts bold sunflowers, dahlias, and gardenias. Autumn
+							highlights rich hues with chrysanthemums and marigolds, while winter features poinsettias,
+							holly, and amaryllis for festive cheer. Choosing seasonal blooms not only reduces costs but
+							also ensures better longevity and eco-friendliness. Whether decorating your home or gifting,
+							seasonal flowers capture the essence of each time of year, adding a natural touch of
+							elegance to any setting.</p>
+					</div>
+					<!--  -->
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product-blog">
+						<a href="#"><img src="img/home/blog-4.jpg" class="img-responsive" alt="img-holiwood"></a>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title-blog">
+						<h2><a href="#">DIY Flower Arrangement Ideas to Elevate Your Home Décor</a></h2>
+						<p>Creating stunning flower arrangements at home is easier than you think, with DIY ideas that
+							suit any style or occasion. For a minimalist look, try a monochromatic bouquet of roses or
+							lilies in a sleek vase. Rustic themes come alive with wildflowers and mason jars, while
+							festive arrangements mix poinsettias with evergreens. For elegance, arrange orchids and
+							peonies in tiered displays, or try floating candles with flower petals for a romantic vibe.
+							With the right tools and creativity, your DIY arrangements can transform your space,
+							combining beauty with personal flair in every corner of your home.</p>
+					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title-blog">
-					<h2><a href="blog-post.html">Choose for yourself the Flobal chiffon dress</a></h2>
-				<div class="time-blog">
-					<span class="time"><i class="far fa-calendar-alt"></i><span>May, 12 2018</span></span>
-					<span class="time"><i class="far fa-edit"></i><span>Pixel-Creative</span></span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec augue scelerisque, aliquet eros in, pulvinar sem. Aliquam erat volutpat. Nulla sit amet felis quis felis sodales suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris euismod nunc diam, quis suscipit libero maximus a. Donec quis mauris congue, pharetra diam sed, semper magna. Nullam rhoncus urna sed consectetur eleifend.</p>
-				<a href="#">Read more</a>
-				</div>
-				<!--  -->
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product-blog">
-					<a href="#"><img src="img/440x360.png" class="img-responsive" alt="img-holiwood"></a>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title-blog">
-					<h2><a href="#">Choose for yourself the Flobal chiffon dress</a></h2>
-				<div class="time-blog">
-					<span class="time"><i class="far fa-calendar-alt"></i><span>May, 12 2018</span></span>
-					<span class="time"><i class="far fa-edit"></i><span>Pixel-Creative</span></span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec augue scelerisque, aliquet eros in, pulvinar sem. Aliquam erat volutpat. Nulla sit amet felis quis felis sodales suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris euismod nunc diam, quis suscipit libero maximus a. Donec quis mauris congue, pharetra diam sed, semper magna. Nullam rhoncus urna sed consectetur eleifend.</p>
-				<a href="#">Read more</a>
-				</div>
-				<!--  -->
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product-blog">
-					<a href="#"><img src="img/440x360.png" class="img-responsive" alt="img-holiwood"></a>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title-blog">
-					<h2><a href="#">Choose for yourself the Flobal chiffon dress</a></h2>
-				<div class="time-blog">
-					<span class="time"><i class="far fa-calendar-alt"></i><span>May, 12 2018</span></span>
-					<span class="time"><i class="far fa-edit"></i><span>Pixel-Creative</span></span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec augue scelerisque, aliquet eros in, pulvinar sem. Aliquam erat volutpat. Nulla sit amet felis quis felis sodales suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris euismod nunc diam, quis suscipit libero maximus a. Donec quis mauris congue, pharetra diam sed, semper magna. Nullam rhoncus urna sed consectetur eleifend.</p>
-				<a href="#">Read more</a>
-				</div>
-				<!--  -->
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product-blog">
-					<a href="#"><img src="img/440x360.png" class="img-responsive" alt="img-holiwood"></a>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title-blog">
-					<h2><a href="#">Choose for yourself the Flobal chiffon dress</a></h2>
-				<div class="time-blog">
-					<span class="time"><i class="far fa-calendar-alt"></i><span>May, 12 2018</span></span>
-					<span class="time"><i class="far fa-edit"></i><span>Pixel-Creative</span></span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec augue scelerisque, aliquet eros in, pulvinar sem. Aliquam erat volutpat. Nulla sit amet felis quis felis sodales suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris euismod nunc diam, quis suscipit libero maximus a. Donec quis mauris congue, pharetra diam sed, semper magna. Nullam rhoncus urna sed consectetur eleifend.</p>
-				<a href="#">Read more</a>
-				</div>
-				<!--  -->
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pagi">
-					<ul class="pagination">
-						<li><a href="#">01</a></li>
-						<li><a href="#">02</a></li>
-						<li><a href="#">03</a></li>
-						<li><a href="#">04</a></li>
-						<li><a href="#"><img src="img/Next.png" class="img-responsive" alt="img-holiwood"></a></li>
-					</ul>
-				</div>
-			</div>
 
-		</div>
-	</div>
-<div class="info-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-					<h3>About</h3>
-					<ul>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">News & Stories</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">History</a> </li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Our Studio</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Shop</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Stockists</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-					<h3>Customer sevices</h3>
-					<ul>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Contact Us</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Trade Services</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Login/Register</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Delivery & Returns</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">FAQs</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-					<h3>Store</h3>
-					<ul>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Shop</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Wedding</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Birthday</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Women's day</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-					<h3>Shop collection</h3>
-					<ul>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">New Arrivals</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Hot</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Sale</a></li>
-						<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Deal of the day</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 social">
-				<p>CONNECT WITH US:</p>
-				<a href="#" id="link-insta"></a>
-				<a href="#" id="link-fb"></a>
-				<a href="#" id="link-tw"></a>
-				<a href="#" id="link-sky"></a>
-				<h1>Newsletter</h1>
-				<h2>Sign up for our mailing list to get latest updates and offers</h2>
-				<form class="form-group" action="mail" method="post">
-					<input type="text" name="input-mail" placeholder="Your mail here" class="input-lg">
-					<button type="submit"><img src="img/Send.png" alt="img-holiwood"></button>
-				</form>
 			</div>
 		</div>
-	</div>
-</div>
-</main>
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo-footer">
-				<a href="#" class="logo-bot"></a>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 copy">
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 gmail-footer">
-				<span id="gmail-footer"><a href="mailto:info@brillanteflowers.ae">E: info@brillanteflowers.ae</a></span>
+		<div class="info-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<h3>About</h3>
+							<ul>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">News & Stories</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">History</a> </li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Our Studio</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Shop</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Stockists</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<h3>Customer sevices</h3>
+							<ul>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Contact Us</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Trade Services</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Login/Register</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Delivery & Returns</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<h3>Store</h3>
+							<ul>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Shop</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Wedding</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Birthday</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Women's day</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<h3>Shop collection</h3>
+							<ul>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">New Arrivals</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Hot</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Sale</a></li>
+								<li><i class="fas fa-long-arrow-alt-right"></i><a href="#">Deal of the day</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 social">
+						<p>CONNECT WITH US:</p>
+						<a href="#" id="link-insta"></a>
+						<a href="#" id="link-fb"></a>
+						<a href="#" id="link-tw"></a>
+						<a href="#" id="link-sky"></a>
+						<h1>Newsletter</h1>
+						<h2>Sign up for our mailing list to get latest updates and offers</h2>
+						<form class="form-group" action="mail" method="post">
+							<input type="text" name="input-mail" placeholder="Your mail here" class="input-lg">
+							<button type="submit"><img src="img/Send.png" alt="img-holiwood"></button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="hidden-lg hidden-md back-to-top fade"><i class="fas fa-caret-up"></i></div>
-	<div class="BG-menu"></div>
-</footer>
-<!-- boostrap & jquery -->
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo-footer">
+					<a href="#" class="logo-bot"></a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 copy">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 gmail-footer">
+					<span id="gmail-footer"><a href="mailto:info@brillanteflowers.ae">E:
+							info@brillanteflowers.ae</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="hidden-lg hidden-md back-to-top fade"><i class="fas fa-caret-up"></i></div>
+		<div class="BG-menu"></div>
+	</footer>
+	<!-- boostrap & jquery -->
 	<script src="js/jquery.min_af.js"></script>
 	<script src="js/bootstrap.min_0028.js"></script>
-	
+
 	<!-- js file -->
 	<script src="js/function-shop.js"></script>
 	<script src="js/function-back-top.js"></script>
@@ -301,4 +251,5 @@
 	<script src="js/funtion-header-v3.js"></script>
 	<script src="js/function-search-v2.js"></script>
 </body>
+
 </html>
