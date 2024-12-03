@@ -1460,7 +1460,7 @@ figure.bg-input::after {
     top: 348px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    : 3;
     -webkit-box-orient: vertical;
     text-align: center;
     padding: 0 222px; }
@@ -1777,7 +1777,7 @@ figure.bg-input::after {
     top: 20px; }
 
   .who p {
-    padding: 0 155px; }
+    padding: 0 60px; }
   .who .media {
     left: 400px; }
 
@@ -1838,7 +1838,8 @@ figure.bg-input::after {
     top: 140px; }
   .who p {
     top: 192px;
-    -webkit-line-clamp: 2; }
+    font-size: 6px;
+    -webkit-line-clamp: 5; }
 
   .collection .banner-collec h3 {
     margin-top: -268px; }
