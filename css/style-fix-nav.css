@@ -9,6 +9,30 @@
   7. Footer / #footer
   
 --------------------------------------*/
+
+
+.whatsapp-floating {
+  position: fixed; /* Keeps the button in a fixed position */
+  bottom: 20px; /* Distance from the bottom of the page */
+  left: 20px; /* Distance from the right of the page */
+  background-color: #25D366; /* WhatsApp green */
+  border-radius: 50%; /* Circular button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  padding: 15px;
+  z-index: 1000; /* Ensures it stays above other content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-floating img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+}
+
+.whatsapp-floating:hover {
+  transform: scale(1.1); /* Slightly enlarges on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+}
+
 @media (max-width: 991px) {
   .nav > li {
     position: unset; }
