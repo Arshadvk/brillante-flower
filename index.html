@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="css/style-homev1.css">
-    <link rel="stylesheet" type="text/css" href="css/style-res-v1.css">
+    <link rel="stylesheet" type="text/css" href="css/style-homev3.css">
+    <link rel="stylesheet" type="text/css" href="css/style-res-v3.css">
     <link rel="stylesheet" type="text/css" href="css/style-fix-nav.css">
     <link rel="stylesheet" type="text/css" href="css/style-form-search-mobile.css">
-    <!-- scroll -->
-
-
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <!-- GG FONT -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
@@ -24,71 +24,55 @@
 </head>
 
 <body>
-    <header class="navbar-fixed-top pos-header" id="header-v1">
-        <nav class="hidden-xs">
-            <div class="container">
-                <ul class="nav navbar-nav nav-help">
-                    <li style="color: white;"><span>P:</span>+971 569 841 158</li>
-                    <li><span>E:</span>info@brillanteflowers.ae</li>
-                </ul>
-            </div>
-        </nav>
+    <header class="container" id="header-v3">
 
-        <div class="container">
-            <div class="row">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 logo"><a href="#"><img src="img/logo.png"
+                        alt="img-holiwood"></a></div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 menu-mobile">
+                <div class=" collapse navbar-collapse" id="myNavbar">
 
-
-                <div class="navbar-header mobile-menu">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse col-lg-6 col-md-6 col-sm-12 col-xs-12" id="myNavbar">
-                    <form class="hidden-lg hidden-md form-group form-search-mobile">
-                        <input type="text" name="search" placeholder="Search here..." class="form-control">
-                        <button type="submit"><img src="img/Search.png" alt="search" class="img-responsive"></button>
-                    </form>
                     <ul class="nav navbar-nav menu-main">
-                        <li>
-                            <figure id="btn-close-menu" class="hidden-lg hidden-md"><i class="far fa-times-circle"></i>
-                            </figure>
-                        </li>
 
                         <li class="wedding-menu"><a id="home-menu" href="index.html">Home </a>
-                            <figure id="wedding-1" class="hidden-sm hidden-xs"></figure>
+                            <figure id="home-1" class="hidden-sm hidden-xs"></figure>
                         </li>
 
                         <li class="wedding-menu"><a href="shop.html">Shop </a>
-                            <figure id="wedding-1" class="hidden-sm hidden-xs"></figure>
+                            <figure id="shop-1" class="hidden-sm hidden-xs"></figure>
                         </li>
 
                         <li class="wedding-menu"><a href="about.html">About Us</a>
-                            <figure id="wedding-1" class="hidden-sm hidden-xs"></figure>
+                            <figure id="about-1" class=" hidden-sm hidden-md hidden-xs"></figure>
                         </li>
 
-                        <li class="contact-menu"><a href="blog.html">Blog</a>
-                            <figure id="contact-1" class="hidden-sm hidden-xs"></figure>
+                        <li class="contact-menu"><a id="blog-menu" href="blog.html">Blog</a>
+                            <figure id="blog-1" class="hidden-sm hidden-xs"></figure>
                         </li>
 
                         <li class="contact-menu"><a href="contact.html">Contact</a>
                             <figure id="contact-1" class="hidden-sm hidden-xs"></figure>
                         </li>
-                        
-                        <li class="hidden-lg hidden-md"><a href="#"><i class="far fa-user"></i> My Account</a></li>
-                        <li class="hidden-lg hidden-md hidden-sm phone-mobile"><strong>P:</strong>+971 569 841 158</li>
-                        <li class="hidden-lg hidden-md hidden-sm phone-mobile">
-                            <strong>E:</strong>info@brillanteflowers.ae
+
+                        <li>
+                            <figure id="btn-close-menu" class="hidden-lg hidden-md"><i class="far fa-times-circle"></i>
+                            </figure>
                         </li>
                     </ul>
                 </div>
-                <ul class="logo col-lg-2 col-md-2 col-sm-7 col-xs-7">
-                    <li><a href="#"><img src="img/logo.png" class="img-responsive" alt="img-holiwood"></a></li>
-                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10 col-xs-9">
+            </div>
 
+            <div class="navbar-header mobile-menu">
+                <button type="button" class="navbar-toggle btn-menu-mobile" data-toggle="collapse"
+                    data-target="#myNavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
-    </header>
 
+    </header>
     <main>
         <div class="content-search">
 
@@ -104,308 +88,219 @@
             </div>
 
         </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
+        <div class="slider-banner">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-
-                <div class="item active slide-1">
-                    <img src="img/slider-1.png" alt="img-holiwood">
-                    <div class="carousel-caption">
-                        <h3>Flower Shop In Abu Dhabi</h3>
-                        <h1>Bloom with Grace</h1>
-                        <p>Flowers inspire us to grow beautifully <br> even in tough conditions</p>
-                        <img src="img/logos/pattern.png" alt="img-holiwood"><br>
-                        <a href="#">Shop now</a>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active slide1">
+                        <img src="img/slider-1.jpg" alt="holiwood">
+                        <div class="carousel-caption">
+                            <h3> Flower Shop In Abu Dhabi</h3>
+                            <h1 style="margin: 0px; padding:0px;">Bloom with <br> Grace</h1>
+                            <p style="margin-top: 10px;">Flowers inspire us to grow beautifully <br> even in tough
+                                conditions</p>
+                        </div>
                     </div>
+
+
+                    <div class="item  slide1">
+                        <img src="img/slider-3.jpg " alt="holiwood">
+                        <div class="carousel-caption">
+                            <h3 style="margin: 0px; padding:0px;"> Flower Shop In Abu Dhabi</h3>
+                            <h1 style="margin: 0px; padding:0px;">Petals of Joy</h1>
+                            <p style="margin-top: 10px;">Each flower brings a little happiness and a lot of charm</p>
+                        </div>
+                    </div>
+
 
                 </div>
-
-
-                <div class="item slide-1">
-                    <img src="img/slider-2.jpg" alt="img-holiwood">
-                    <div class="carousel-caption">
-                        <h3>Flower Shop In Abu Dhabi</h3>
-                        <h1>Petals of Joy</h1>
-                        <p>Each flower brings a little happiness and a lot of charm.</p>
-                        <img src="img/logos/pattern.png" alt="img-holiwood"><br>
-                        <a href="#">Shop now</a>
-                    </div>
-
-                </div>
-
-             
-
             </div>
         </div>
 
-        <div class="who" id="">
-            <div class="gallery clearfix">
-                <figure>
-                    <img src="img/who.png" alt="img-holiwood">
-                    <h1>who we are ?</h1>
-                    <h1 class="h2">who we are ?</h1>
-                    <p>We are passionate florists dedicated to bringing the beauty of nature into your life. With a love .<br class="hidden-md hidden-sm hidden-xs">
-                         for flowers and a commitment to quality, we create stunning arrangements that celebrate every
-                         .<br class="hidden-md hidden-sm hidden-xs"> occasion and brighten every moment
-                      
-                    </p>
-
-                </figure>
-            </div>
-        </div>
-
-
-
-
-        <div class="container collection" id="">
-            <h1>Shop by collection</h1>
-            <h2>- All Category of Brillante Flowers -</h2>
-            <div class="gallery clearfix">
-                <figure>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 banner-collec">
-
-                            <img src="img/home/collection.png" class="img-responsive" alt="img-holiwood">
-                            <h3>HELLO SUMMER</h3>
-                            <h1>Sale 10%</h1>
-                            <a href="#">Shop now</a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 product-collection">
-                                <div class="product-image-collec">
-                                    <figure class="hot"><a href="#"><img src="img/flowers/dummy/collec-1.jpg"
-                                                class="img-responsive" alt="img-holiwood"></a></figure>
-
-                                </div>
-                                <div class="product-title-collec">
-                                    <h5><a href="#"> Pink roses</a></h5>
-
-                                    <div class="prince"> 207.2 <span style="font-size: 15px;">AED</span> </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 product-collection">
-                                <div class="product-image-collec">
-                                    <a href="#"><img src="img/flowers/dummy/collec-2.jpg" class="img-responsive"
-                                            alt="img-holiwood"></a>
-
-                                </div>
-                                <div class="product-title-collec">
-                                    <h5><a href="#"> Eleganr by BloomNation</a></h5>
-                                    <div class="prince">115 <span style="font-size: 15px;">AED</span> </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 product-collection">
-                                <div class="product-image-collec">
-                                    <a href="#"><img src="img/flowers/dummy/collec-3.jpg" class="img-responsive"
-                                            alt="img-holiwood"></a>
-                                </div>
-                                <div class="product-title-collec">
-                                    <h5><a href="#">Queen Rose - Yellow</a></h5>
-
-                                    <div class="prince">250 <span style="font-size: 15px;">AED</span> </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 product-collection">
-                                <div class="product-image-collec">
-                                    <figure class="sale"><a href="#"><img src="img/flowers/dummy/collec-4.jpg"
-                                                class="img-responsive" alt="img-holiwood"></a></figure>
-                                </div>
-                                <div class="product-title-collec">
-                                    <h5><a href="#">Cottage Rose Bouquet</a></h5>
-                                    <div class="prince">100 <span style="font-size: 15px;">AED</span> <s
-                                            class="strike">150 <span style="font-size: 15px;">AED</span> </s></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </figure>
-            </div>
-        </div>
-
-        
-        <!-- <div class=" wedding" id="showcase-3">
-
-
-
-            <h1>Wedding</h1>
-            <h2>- Lorem Ipsum is<span class="hidden-xs"> simply dummy</span> text of the printing -</h2>
-            <div class="gallery clearfix">
-                <figure>
-                    <div class="img-wedding"><img src="img/home/wedding.png" alt="img-holiwood"></div>
-                    <div class="container wedding-content">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 product-wedding">
-                                <div class="product-image-wedding">
-                                    <figure class="sale"><a href="#"><img src="img/flowers/dummy/wedding-1.jpg"
-                                                class="img-responsive" alt="img-holiwood"></a></figure>
-
-                                </div>
-                                <div class="product-title-wedding">
-                                    <h5><a href="#">Queen Rose - Pink</a></h5>
-                                    <div class="prince">300.2 <span style="font-size: 15px;">AED</span></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 product-wedding">
-                                <div class="product-image-wedding">
-                                    <a href="#"><img src="img/flowers/dummy/wedding-2.jpg" class="img-responsive"
-                                            alt="img-holiwood"></a>
-
-                                </div>
-                                <div class="product-title-wedding">
-                                    <h5><a href="#">Bouquet Lavender</a></h5>
-
-                                    <div class="prince">160.8 <span style="font-size: 15px;">AED</span></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 product-wedding">
-                                <div class="product-image-wedding">
-                                    <figure class="hot"><a href="#"><img src="img/flowers/dummy/wedding-3.jpg"
-                                                class="img-responsive" alt="img-holiwood"></a></figure>
-
-                                </div>
-                                <div class="product-title-wedding">
-                                    <h5><a href="#">Tulipa Floriade - Yellow</a></h5>
-                                    <div class="prince">200.7 <span style="font-size: 15px;">AED</span></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 product-wedding">
-                                <div class="product-image-wedding">
-                                    <a href="#"><img src="img/flowers/dummy/wedding-4.jpg" class="img-responsive"
-                                            alt="img-holiwood"></a>
-
-                                </div>
-                                <div class="product-title-wedding">
-                                    <h5><a href="#">Bouquet Rose</a></h5>
-
-                                    <div class="prince">350.4 <span style="font-size: 15px;">AED</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </figure>
-            </div>
-
-        </div> -->
-
-        <!-- <div class="holiday" id="showcase-4">
+        <div class="show-img">
             <div class="container">
-                <h1>Holiday</h1>
-                <h2>- Lorem Ipsum is<span class="hidden-xs"> simply dummy</span> text of the printing -</h2>
-                <div class="gallery clearfix">
-                    <figure>
-                        <div class="row">
-
-
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 product-holiday">
-                                    <div class="product-image-holiday">
-                                        <figure class="hot"><a href="#"><img src="img/flowers/dummy/holiday-1.jpg"
-                                                    class="img-responsive" alt="img-holiwood"></a></figure>
-                                    </div>
-                                    <div class="product-title-holiday">
-                                        <h5><a href="#">Fun & Flirty By BloomNation</a></h5>
-                                        <div class="prince">200.2 <span style="font-size: 15px;">AED</span></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 product-holiday">
-                                    <div class="product-image-holiday">
-                                        <a href="#"><img src="img/flowers/dummy/holiday-2.jpg" class="img-responsive"
-                                                alt="img-holiwood"></a>
-                                        
-                                    </div>
-                                    <div class="product-title-holiday">
-                                        <h5><a href="#">Winter White Bouquet</a></h5>
-                                        
-                                        <div class="prince">240.2 <span style="font-size: 15px;">AED</span></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 product-holiday">
-                                    <div class="product-image-holiday">
-                                        <a href="#"><img src="img/flowers/dummy/holiday-3.jpg" class="img-responsive"
-                                                alt="img-holiwood"></a>
-                                      
-                                    </div>
-                                    <div class="product-title-holiday">
-                                        <h5><a href="#">Tulipa Floriade - Red</a></h5>
-                                       
-                                        <div class="prince">105.7 <span style="font-size: 15px;">AED</span></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 product-holiday">
-                                    <div class="product-image-holiday">
-                                        <figure class="sale"><a href="#"><img src="img/flowers/dummy/holiday-4.jpg"
-                                                    class="img-responsive" alt="img-holiwood"></a></figure>
-                                    
-                                    </div>
-                                    <div class="product-title-holiday">
-                                        <h5><a href="#">West Palm Beach Florist</a></h5>
-                                      
-                                        <div class="prince">209.2 <span style="font-size: 15px;">AED</span></div>
-                                    </div>
-                                </div>
+                <div class="row">
+                    <div class="show-item">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 item-1">
+                            <figure id="figure-show-1"><a href="#"><img src="img/home/banner-2.jpg"
+                                        class="img-responsive" alt="holiwood"></a></figure>
+                            <div class="show-title-1">
+                                <h1 style="color: bisque;">Christmas<br>Collections</h1>
+                                <h2 style="color:burlywood;"> <b>Starting From 4.99 </b></h2>
                             </div>
 
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 banner-holiday">
-                                <div class="img-banner-holiday">
-                                    <img src="img/home/holiday.png" class="img-responsive" alt="img-holiwood">
-                                </div>
-                                <div class="title-holiday">
-                                    <h1>HAPPY MOTHER'S DAY</h1>
-                                    <p>Lorem ipsum is simply dummy text of the printing and typesetting</p>
-                                    <span id="sale30">-30</span><span id="pt">%</span><br><span id="off">OFF</span>
-                                </div>
-
-                            </div>
                         </div>
-                    </figure>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 item-2">
+                            <figure id="figure-show-2"><a href="#"><img src="img/home/banner-1.jpg"
+                                        class="img-responsive" alt="holiwood"></a></figure>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 item-3">
+                            <figure id="figure-show-3"><a href="#"><img src="img/home/banner-3.jpg"
+                                        class="img-responsive" alt="holiwood"></a></figure>
+                            <div class="show-title-2 title-1">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 item-4">
+                            <figure id="figure-show-4"><a href="#"><img src="img/home/banner-4.jpg"
+                                        class="img-responsive" alt="holiwood"></a></figure>
+                          
+
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <!-- --------------------------- -->
+            <div class="container">
+                <h1 style="padding-bottom: 20px;"> Brillante Flowers</h1>
+    
+                <div class="row">
+                    <div class="tab-content">
+
+                        <!-- ------tab new---------------- -->
+                        <div id="menu-tab-new" class="tab-pane fade in active">
+
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure class="sale"><a href="#"><img src="img/home/flowers/flower-1.jpg"
+                                                class="img-responsive" alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Queen Rose - Pink</a></h5>
+                                    <!-- <div class="prince">$300.2<s class="strike">$250.9</s></div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/home/flowers/flower-2.jpg" class="img-responsive" alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Gift Bouquet</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure ><a href="#"><img src="img/home/flowers/flower-3.jpg" class="img-responsive"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Bouquet Rose</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/home/flowers/flower-4.jpg" class="img-responsive" alt="holiwood"></a>
+
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#"></a>Rose Vase </h5>
+                                </div>
+                            </div>
+
+                            <!-- ------------------------------------------------ -->
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/home/flowers/flower-5.jpg" class="img-responsive" alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Jewellery Bouquet</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/home/flowers/flower-6.jpg" class="img-responsive"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Money Bouquet</a></h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/home/flowers/flower-7.jpg" class="img-responsive" alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Vase</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/home/flowers/flower-8.jpg" class="img-responsive"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Money Bouquet</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/home/flowers/flower-9.jpg" class="img-responsive"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Mobile Bouquet</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/home/flowers/flower-10.jpg" class="img-responsive"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Letter Flowers</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/home/flowers/flower-11.jpg" class="img-responsive"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Baby Shower</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/home/flowers/flower-12.jpg" class="img-responsive"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Car Arrangements</a></h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- end tab content -->
+
+                </div><!-- end row -->
 
             </div>
-        </div> -->
-
-        <!-- <div class="count">
-            <div class="img-count">
-                <img src="img/home/counter.png" alt="img-holiwood">
-            </div>
-            <div class="title-count">
-                <h1>Sale up to 40%</h1>
-                <p>It is a long established facr that a reader will be distracted by the<br> readable content of a page
-                    when looking at its layout</p>
-                <div id="countdown">
-                    <div id='tiles'></div>
-                    <ul class="labels">
-                        <li>Days</li>
-                        <li>Hours</li>
-                        <li>Mins</li>
-                        <li>Secs</li>
-                    </ul>
-                </div>
-                <a href="#">Shop now</a>
-            </div>
+        </div>
+        <!-- ------------------------- -->
 
 
-        </div> -->
 
-        <!-- <div class="brand container">
-            <div class="row">
-                <div class="brand-1 col-lg-2 col-md-2 col-sm-2 col-xs-4"></div>
-                <div class="brand-2 col-lg-2 col-md-2 col-sm-2 col-xs-4"></div>
-                <div class="brand-3 col-lg-2 col-md-2 col-sm-2 col-xs-4"></div>
-                <div class="brand-4 col-lg-2 col-md-2 col-sm-2 col-xs-4"></div>
-                <div class="brand-5 col-lg-2 col-md-2 col-sm-2 col-xs-4"></div>
-                <div class="brand-6 col-lg-2 col-md-2 col-sm-2 col-xs-4"></div>
-            </div>
-
-        </div> -->
 
 
         <div class="container blog">
@@ -421,7 +316,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 product-blog">
                     <a href="#"><img src="img/home/blog-2.jpg" class="img-responsive" title="img-blog"
                             alt="img-holiwood"></a>
-                 
+
                     <h2><a href="#">10 Beautiful Indoor Plants That Double as Air Purifiers</a></h2>
                     <p>Indoor plants not only enhance home aesthetics but also improve air quality ...</p>
 
@@ -435,58 +330,166 @@
                 </div>
             </div>
         </div>
+
+
+
+
+        <div class="feedback">
+            <div class="container">
+                <h1>Customers say</h1>
+                <h2>,,</h2>
+                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel1" data-slide-to="1"></li>
+                        <li data-target="#myCarousel1" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <p>I have been a customer of Brillante Flowers for more than 4 years now and <br
+                                    class="hidden-sm hidden-xs"> they have always showed amazing work with affordable
+                                prices.</p>
+                            <div class="img-customer">
+                                <!-- <img src="img/115x115.png" alt="img-holiwood"> -->
+                                <h1>Shamma Al hammadi</h1>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <p>I have bought this bouquet of flowers from Brilliante flowers . <br
+                                    class="hidden-sm hidden-xs"> I m very happy with their customer service and price .
+                                <br class="hidden-sm hidden-xs"> I highly recommend Brilliante Flowers those who
+                                need flower bouquet and flower arrangements
+                            </p>
+                            <div class="img-customer">
+                                <!-- <img src="img/115x115.png" alt="img-holiwood"> -->
+                                <h1>Sujith Thampy </h1>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <p>The flowers arrangement they made is more than satisfactory, flowers are fresh always and
+                                <br class="hidden-sm hidden-xs"> you can get it in affordable price. Aside from that,
+                                <br class="hidden-sm hidden-xs"> the staff are nice and approachable. ♡
+                            </p>
+                            <div class="img-customer">
+                                <!-- <img src="img/115x115.png" alt="img-holiwood"> -->
+                                <h1>Gee Ann Arminal</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="img-link">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 colum-img">
+                        <a href="#"><img src="img/instagram/insta-1.jpg" class="img-responsive" alt="holiwood"></a>
+                        <a href="https://www.instagram.com/brillante_flowers/" class="img-insta"><i
+                                class="fab fa-instagram"></i>
+                            <h1>Instagram</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 colum-img">
+                        <a href="#"><img src="img/instagram/insta-2.jpg" class="img-responsive" alt="holiwood"></a>
+                        <a href="https://www.instagram.com/brillante_flowers/" class="img-insta"><i
+                                class="fab fa-instagram"></i>
+                            <h1>Instagram</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 colum-img">
+                        <a href="#"><img src="img/instagram/insta-3.jpg" class="img-responsive" alt="holiwood"></a>
+                        <a href="https://www.instagram.com/brillante_flowers/" class="img-insta"><i
+                                class="fab fa-instagram"></i>
+                            <h1>Instagram</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 colum-img">
+                        <a href="#"><img src="img/instagram/insta-4.jpg" class="img-responsive" alt="holiwood"></a>
+                        <a href="https://www.instagram.com/brillante_flowers/" class="img-insta"><i
+                                class="fab fa-instagram"></i>
+                            <h1>Instagram</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 colum-img">
+                        <a href="#"><img src="img/instagram/insta-5.jpg" class="img-responsive" alt="holiwood"></a>
+                        <a href="#" class="img-insta"><i class="fab fa-instagram"></i>
+                            <h1>Instagram</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 colum-img">
+                        <a href="#"><img src="img/instagram/insta-6.jpg" class="img-responsive" alt="holiwood"></a>
+                        <a href="#" class="img-insta"><i class="fab fa-instagram"></i>
+                            <h1>Instagram</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <!-- <h3>About</h3> -->
+                            <ul>
+                                <li><i class="fas fa-long-arrow-alt-right"></i><a href="index.html">Home</a></li>
+                                <li><i class="fas fa-long-arrow-alt-right"></i><a href="index.html">Site Map</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <ul>
+                                <li><i class="fas fa-long-arrow-alt-right"></i><a href="contact.html">Contact Us</a>
+                                </li>
+                                <li><i class="fas fa-long-arrow-alt-right"></i><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <ul>
+                                <li><i class="fas fa-long-arrow-alt-right"></i><a href="about.html">About</a></li>
+                                <li><i class="fas fa-long-arrow-alt-right"></i><a href="shop.html">Shop</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <ul>
+                                <li><i class="fas fa-long-arrow-alt-right"></i><a href="blog.html">Blog</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 social">
+                        <p>CONNECT WITH US:</p>
+                        <a href="#" id="link-insta"></a>
+                        <a href="#" id="link-fb"></a>
+                        <a href="#" id="link-tw"></a>
+                        <a href="#" id="link-sky"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6 info-footer">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <!-- <h3>About</h3> -->
-                        <ul>
-                            <li><i class="fas fa-long-arrow-alt-right"></i><a href="index.html">Home</a></li>
-                          
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <!-- <h3>Customer sevices</h3> -->
-                        <ul>
-                            <li><i class="fas fa-long-arrow-alt-right"></i><a href="shop.html">Shop</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <!-- <h3>Store</h3> -->
-                        <ul>
-                            <li><i class="fas fa-long-arrow-alt-right"></i><a href="about.html">About</a></li>
-                
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <div class="social-text"><span id="text-connect">CONNECT WITH US:</span>
-                            <span class="social">
-                                <a href="#" id="instar"></a>
-                                <a href="#" id="fb"></a>
-                                <a href="#" id="tw"></a>
-                                <a href="#" id="sky"></a>
-                            </span>
-                        </div>
-                    </div>
-
-                    
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo-footer">
                 </div>
-            </div>
-        </div>
-        
-        <div class="footer-logo">
-            <div class="row footer-row">
-                <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <a href="#" class="logo-bot"></a>
-                </div> -->
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 cop">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 copy">
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <span id="gmail-footer"><a href="mailto:info@brillanteflowers.ae">E:
-                            info@brillanteflowers.ae</a></span>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 gmail-footer">
+                    <span id="gmail-footer"><a href="#">E: info@brillanteflowers.ae</a></span>
                 </div>
             </div>
         </div>
@@ -497,17 +500,17 @@
     <!-- boostrap & jquery -->
     <script src="js/jquery.min_af.js"></script>
     <script src="js/bootstrap.min_0028.js"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <!-- js file -->
-    <script src="js/function-homev1.js"></script>
-    <script src="js/function-sidebar.js"></script>
-    <script src="js/function-back-top.js"></script>
+    <script src="js/function-time-counter.js"></script>
+    <script src="js/function-slick.js"></script>
+    <script src="js/function-input-number.js"></script>
+    <script src="js/function-flower.js"></script>
     <script src="js/function-select-custom.js"></script>
+    <script src="js/function-back-top.js"></script>
+    <script src="js/function-sidebar.js"></script>
+    <script src="js/funtion-header-v3.js"></script>
     <script src="js/function-search-v2.js"></script>
-    <!-- scroll js -->
-    <script type="text/javascript" src="scrolling/TweenMax.min.js"></script>
-    <script src="scrolling/jquery.superscrollorama.js"></script>
-    <script src="js/function-scroll.js"></script>
-
 </body>
 
 </html>

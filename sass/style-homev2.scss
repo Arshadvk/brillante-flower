@@ -242,8 +242,8 @@ main{
 		.item{
 			padding: 150px 90px 100px 100px;height: 100%;
 			h3{@include font-face(Abril Fatface,120px,400);text-align:left;padding: 100px 0 0 30px;&#h1{padding: 0 0 10px 30px;margin-top: 0;}
-			&.clip-text{@include clip-text("img/BG-title.jpg",-160px -170px);}
-			&.clip-text-2{@include clip-text("img/BG-title.jpg",-160px -316px);}
+			&.clip-text{@include clip-text(-160px -170px);}
+			&.clip-text-2{@include clip-text(-160px -316px);}
 		}
 			p{@include font-face(Poppins,18px,400);color: #888888;padding-left: 30px;&#p1{color: black;padding-top: 150px;margin-bottom: 0;}}
 			a{

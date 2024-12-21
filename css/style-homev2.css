@@ -782,14 +782,12 @@ main .carousel {
           color: #fff;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          background-image: url("img/BG-title.jpg");
           background-position: -160px -170px; }
         main .carousel .carousel-inner .item h3.clip-text-2 {
           /* Color fallback */
           color: #fff;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          background-image: url("img/BG-title.jpg");
           background-position: -160px -316px; }
       main .carousel .carousel-inner .item p {
         font-family: Poppins;

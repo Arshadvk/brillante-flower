@@ -189,7 +189,7 @@ header{
 			@include font-face(Abril Fatface,108px,400);
 			padding-bottom: 60px;
 			margin-top: 0;
-			@include clip-text("img/BG-title.jpg",-360px -290px);
+			@include clip-text(-360px -290px);
 		}
 		h3{
 			@include font-face(Poppins,20px,400);
@@ -204,7 +204,7 @@ header{
 	@extend .slide1;
 	h2{
 		@include font-face(Poppins,36px,400);
-		@include clip-text("img/BG-title-v3.jpg",-310px -430px);
+		@include clip-text(-310px -430px);
 	}
 	.carousel-caption{right: 15%;left:54%;padding-bottom: 190px;
 		h1{padding-bottom: 0;}
