@@ -35,6 +35,78 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
+<style>
+    /* Default image styles */
+    .flower-image {
+        width: 315px;
+        height: 415px;
+        object-fit: cover;
+    }
+
+    /* Responsive style for mobile */
+    @media (max-width: 767px) {
+
+        /* Adjust for screens smaller than 768px */
+        .flower-image {
+            width: 100%;
+            object-fit: cover;
+            /* Adjusts to the container width */
+        }
+    }
+
+    .custom-button {
+        background-color: #ff6f61;
+        color: white;
+        /* Text color */
+        border: none;
+        /* Removes border */
+        border-radius: 8px;
+        /* Rounded corners */
+        padding: 25px 65px;
+        /* Adjust padding for size */
+        cursor: pointer;
+        /* Changes cursor to pointer */
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        /* Smooth effects */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow */
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .custom-button a {
+        text-decoration: none;
+        /* Removes underline from the link */
+        color: white;
+        /* Text color */
+        /* Adjust font size */
+        font-weight: bold;
+        /* Bold text */
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        /* Font style */
+    }
+
+    .custom-button:hover {
+        text-decoration: none;
+        background-color: #e6554f;
+        /* Darker shade on hover */
+        color: rgb(0, 0, 0);
+        /* Text color */
+        transform: scale(1.05);
+        /* Slight zoom effect */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        /* More prominent shadow on hover */
+    }
+
+    .custom-button:active {
+        background-color: #d6453d;
+        /* Darkest shade when clicked */
+        transform: scale(0.98);
+        /* Slight press-in effect */
+    }
+</style>
 
 <body>
     <header class="container" id="header-v3">
@@ -51,9 +123,25 @@
                             <figure id="home-1" class="hidden-sm hidden-xs"></figure>
                         </li>
 
-                        <li class="wedding-menu"><a href="shop.html">Shop </a>
-                            <figure id="shop-1" class="hidden-sm hidden-xs"></figure>
-                        </li>
+                        <li class="dropdown menu-home">
+							<a href="#" id="shop-1" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
+							<ul class="menu-home-lv2 dropdown-menu">
+								<li class="li-home"><i
+										class="fas fa-long-arrow-alt-right hidden-sm hidden-md hidden-xs"></i><a
+										href="/shop.html">All Shop</a></li>
+								<li class="li-home"><i
+										class="fas fa-long-arrow-alt-right hidden-sm hidden-md hidden-xs"></i><a
+										href="/bouquet.html">Bouquet</a></li>
+                                        <li class="li-home"><i
+                                            class="fas fa-long-arrow-alt-right hidden-sm hidden-md hidden-xs"></i><a
+                                            href="">Flower Vase</a></li>
+                                    <li class="li-home"><i
+                                            class="fas fa-long-arrow-alt-right hidden-sm hidden-md hidden-xs"></i><a
+                                            href="">Car Arrangements</a></li>
+
+							</ul>
+						</li>
+
 
                         <li class="wedding-menu"><a href="about.html">About Us</a>
                             <figure id="about-1" class=" hidden-sm hidden-md hidden-xs"></figure>
@@ -87,20 +175,6 @@
 
     </header>
     <main>
-        <div class="content-search">
-
-            <div class="container container-100">
-                <i class="far fa-times-circle" id="close-search"></i>
-                <h3 class="text-center">what are your looking for ?</h3>
-                <form method="get" action="/search" role="search" style="position: relative;">
-                    <input type="text" class="form-control control-search" value="" autocomplete="off"
-                        placeholder="Enter Search ..." aria-label="SEARCH" name="q">
-
-                    <button class="button_search" type="submit">search</button>
-                </form>
-            </div>
-
-        </div>
         <div class="slider-banner">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -178,440 +252,307 @@
                 </div>
             </div>
         </div>
-        <div class="category">
-			<!-- Modal quick view -->
-			<div id="myModal" class="modal fade" role="dialog">
-				<div class="modal-dialog">
-
-					<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-
-						</div>
-						<div class="modal-body">
-							<div class="tab-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<div id="img-pill-1" class="tab-pane fade in active">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 title-quick">
-											<figure class="fi-quick">
-												<h1>QUICK VIEW</h1>
-											</figure>
-										</div>
-										<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-											<img src="img/340x420.png" class="img-responsive" alt="holiwood">
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 detail">
-										<h1>Queen Rose - Pink</h1>
-										<p class="p1">It is a long established fact that a reader will be distracted by
-											the readable content of a page when looking at its layout.</p>
-										<div class="star">
-											<i class="fas fa-star"></i><i class="fas fa-star"></i><i
-												class="fas fa-star"></i><i class="fas fa-star"></i><i
-												class="fas fa-star"></i>
-											<span>10 Rating(s) | Add Your Rating</span>
-										</div>
-										<div class="prince"><span>$250.9</span><s class="strike">$300.02</s></div>
-										<figure class="fi-option">
-											<p class="option">Option</p>
-										</figure>
-										<div class="size">
-											<span class="lb-size">Size <span class="sta-red">*</span></span><span
-												class="lb-color">Color <span class="sta-red">*</span></span>
-										</div>
-										<div class="select-custom">
-											<select>
-												<option>S</option>
-												<option>M</option>
-												<option>L</option>
-												<option>XL</option>
-											</select>
-											<a href="#"><span class="color-1"></span></a> <a href="#"><span
-													class="color-2"></span></a> <a href="#"><span
-													class="color-3"></span></a> <a href="#"><span
-													class="color-4"></span></a>
-											<p class="require">Required Fields <span>*</span></p>
-											<div class="Quality">
-
-												<div class="input-group input-number-group">
-													<span class="text-qua">Quanty:</span>
-													<div class="input-group-button">
-														<span class="input-number-decrement">-</span>
-													</div>
-													<input class="input-number" type="number" min="0" max="1000"
-														value="01">
-													<div class="input-group-button">
-														<span class="input-number-increment">+</span>
-													</div>
-													<span class="dola">$ </span><span class="total">250.9</span>
-												</div>
-
-											</div>
-											<div class="add-cart">
-												<a href="#" class="btn-add-cart">Add to cart</a>
-												<a href="#" class="list-icon icon-1"><i class="far fa-eye"></i></a>
-												<a href="#" class="list-icon icon-2"><i class="far fa-heart"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="img-pill-2" class="tab-pane fade">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 title-quick">
-											<figure class="fi-quick">
-												<h1>QUICK VIEW</h1>
-											</figure>
-										</div>
-										<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-											<img src="img/340x420.png" class="img-responsive" alt="holiwood">
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 detail">
-										<h1>Queen Rose</h1>
-										<p class="p1">It is a long established fact that a reader will be distracted by
-											the readable content of a page when looking at its layout.</p>
-										<div class="star">
-											<i class="fas fa-star"></i><i class="fas fa-star"></i><i
-												class="fas fa-star"></i><i class="fas fa-star"></i><i
-												class="fas fa-star"></i>
-											<span>10 Rating(s) | Add Your Rating</span>
-										</div>
-										<div class="prince"><span>$300.02</span><s class="strike">$250.9</s></div>
-										<figure class="fi-option">
-											<p class="option">Option</p>
-										</figure>
-										<div class="size">
-											<span class="lb-size">Size <span class="sta-red">*</span></span><span
-												class="lb-color">Color <span class="sta-red">*</span></span>
-										</div>
-										<div class="select-custom">
-											<select>
-												<option>S</option>
-												<option>M</option>
-												<option>L</option>
-												<option>XL</option>
-											</select>
-											<a href="#"><span class="color-1"></span></a> <a href="#"><span
-													class="color-2"></span></a> <a href="#"><span
-													class="color-3"></span></a> <a href="#"><span
-													class="color-4"></span></a>
-											<p class="require">Required Fields <span>*</span></p>
-											<div class="Quality">
-
-												<div class="input-group input-number-group">
-													<span class="text-qua">Quanty:</span>
-													<div class="input-group-button">
-														<span class="input-number-decrement">-</span>
-													</div>
-													<input class="input-number" type="number" min="0" max="1000"
-														value="01">
-													<div class="input-group-button">
-														<span class="input-number-increment">+</span>
-													</div>
-													<span class="dola">$ </span><span class="total">250.9</span>
-												</div>
-
-											</div>
-											<div class="add-cart">
-												<a href="#" class="btn-add-cart">Add to cart</a>
-												<a href="#" class="list-icon icon-1"><i class="far fa-eye"></i></a>
-												<a href="#" class="list-icon icon-2"><i class="far fa-heart"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="img-pill-3" class="tab-pane fade">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 title-quick">
-											<figure class="fi-quick">
-												<h1>QUICK VIEW</h1>
-											</figure>
-										</div>
-										<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-											<img src="img/340x420.png" class="img-responsive" alt="holiwood">
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 detail">
-										<h1>Lavender</h1>
-										<p class="p1">It is a long established fact that a reader will be distracted by
-											the readable content of a page when looking at its layout.</p>
-										<div class="star">
-											<i class="fas fa-star"></i><i class="fas fa-star"></i><i
-												class="fas fa-star"></i><i class="fas fa-star"></i><i
-												class="fas fa-star"></i>
-											<span>10 Rating(s) | Add Your Rating</span>
-										</div>
-										<div class="prince"><span>$300.02</span><s class="strike">$250.9</s></div>
-										<figure class="fi-option">
-											<p class="option">Option</p>
-										</figure>
-										<div class="size">
-											<span class="lb-size">Size <span class="sta-red">*</span></span><span
-												class="lb-color">Color <span class="sta-red">*</span></span>
-										</div>
-										<div class="select-custom">
-											<select>
-												<option>S</option>
-												<option>M</option>
-												<option>L</option>
-												<option>XL</option>
-											</select>
-											<a href="#"><span class="color-1"></span></a> <a href="#"><span
-													class="color-2"></span></a> <a href="#"><span
-													class="color-3"></span></a> <a href="#"><span
-													class="color-4"></span></a>
-											<p class="require">Required Fields <span>*</span></p>
-											<div class="Quality">
-
-												<div class="input-group input-number-group">
-													<span class="text-qua">Quanty:</span>
-													<div class="input-group-button">
-														<span class="input-number-decrement">-</span>
-													</div>
-													<input class="input-number" type="number" min="0" max="1000"
-														value="01">
-													<div class="input-group-button">
-														<span class="input-number-increment">+</span>
-													</div>
-													<span class="dola">$ </span><span class="total">250.9</span>
-												</div>
-
-											</div>
-											<div class="add-cart">
-												<a href="#" class="btn-add-cart">Add to cart</a>
-												<a href="#" class="list-icon icon-1"><i class="far fa-eye"></i></a>
-												<a href="#" class="list-icon icon-2"><i class="far fa-heart"></i></a>
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<div id="img-pill-4" class="tab-pane fade">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 title-quick">
-											<figure class="fi-quick">
-												<h1>QUICK VIEW</h1>
-											</figure>
-										</div>
-										<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-											<img src="img/340x420.png" class="img-responsive" alt="holiwood">
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 detail">
-										<h1>Queen Rose - Yellow</h1>
-										<p class="p1">It is a long established fact that a reader will be distracted by
-											the readable content of a page when looking at its layout.</p>
-										<div class="star">
-											<i class="fas fa-star"></i><i class="fas fa-star"></i><i
-												class="fas fa-star"></i><i class="fas fa-star"></i><i
-												class="fas fa-star"></i>
-											<span>10 Rating(s) | Add Your Rating</span>
-										</div>
-										<div class="prince"><span>$300.02</span><s class="strike">$250.9</s></div>
-										<figure class="fi-option">
-											<p class="option">Option</p>
-										</figure>
-										<div class="size">
-											<span class="lb-size">Size <span class="sta-red">*</span></span><span
-												class="lb-color">Color <span class="sta-red">*</span></span>
-										</div>
-										<div class="select-custom">
-											<select>
-												<option>S</option>
-												<option>M</option>
-												<option>L</option>
-												<option>XL</option>
-											</select>
-											<a href="#"><span class="color-1"></span></a> <a href="#"><span
-													class="color-2"></span></a> <a href="#"><span
-													class="color-3"></span></a> <a href="#"><span
-													class="color-4"></span></a>
-											<p class="require">Required Fields <span>*</span></p>
-											<div class="Quality">
-
-												<div class="input-group input-number-group">
-													<span class="text-qua">Quanty:</span>
-													<div class="input-group-button">
-														<span class="input-number-decrement">-</span>
-													</div>
-													<input class="input-number" type="number" min="0" max="1000"
-														value="01">
-													<div class="input-group-button">
-														<span class="input-number-increment">+</span>
-													</div>
-													<span class="dola">$ </span><span class="total">250.9</span>
-												</div>
-
-											</div>
-											<div class="add-cart">
-												<a href="#" class="btn-add-cart">Add to cart</a>
-												<a href="#" class="list-icon icon-1"><i class="far fa-eye"></i></a>
-												<a href="#" class="list-icon icon-2"><i class="far fa-heart"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<ul class="nav nav-pills col-lg-6 col-md-6 col-sm-6 col-xs-12 img-pill">
-								<li class="active col-lg-4 col-md-4 col-sm-4 col-xs-12"><a data-toggle="pill"
-										href="#img-pill-1"><img src="img/340x420.png" class="img-responsive"
-											alt="holiwood"></a></li>
-								<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a data-toggle="pill"
-										href="#img-pill-2"><img src="img/340x420.png" class="img-responsive"
-											alt="holiwood"></a></li>
-								<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a data-toggle="pill"
-										href="#img-pill-3"><img src="img/340x420.png" class="img-responsive"
-											alt="holiwood"></a></li>
-								<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a data-toggle="pill"
-										href="#img-pill-4"><img src="img/340x420.png" class="img-responsive"
-											alt="holiwood"></a></li>
-							</ul>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-			<!-- --------------------------- -->
-			
-		</div>
 
         <div class="category">
-            <!-- --------------------------- -->
             <div class="container">
-                <h1 style="padding-bottom: 20px;"> Brillante Flowers</h1>
+                <h1>Category of Brillante Flowers</h1>
+                <ul class="nav nav-tabs menu-category">
+                    <li class="new-menu active"><a data-toggle="tab" href="#menu-tab-new" id="new-menu">Bouquet</a>
+                        <figure id="new-2" class="hidden-xs"></figure>
+                    </li>
+                    <li class="wedding-menu"><a data-toggle="tab" href="#menu-tab-wedding">Flower Vase</a>
+                        <figure id="wedding-2" class="hidden-xs"></figure>
+                    </li>
+                    <li class="other-menu"><a data-toggle="tab" href="#menu-tab-other">Car Arrangements</a>
+                        <figure id="other-2" class="hidden-xs"></figure>
+                    </li>
+                </ul>
 
                 <div class="row">
                     <div class="tab-content">
 
                         <!-- ------tab new---------------- -->
                         <div id="menu-tab-new" class="tab-pane fade in active">
-
-
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
                                 <div class="product-image-category">
-                                    <figure class="sale"><a href="#"><img src="img/home/flowers/flower-1.jpg"
-                                                class="img-responsive" alt="holiwood"></a></figure>
-                                </div>
-                                <div class="product-title-category">
-                                    <h5><a href="#">Queen Rose - Pink</a></h5>
-                                    <!-- <div class="prince">$300.2<s class="strike">$250.9</s></div> -->
-                                </div>
-                            </div>
-
-                           
-
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
-                                <div class="product-image-category">
-                                    <figure><a href="#"><img src="img/home/flowers/flower-3.jpg" class="img-responsive"
+                                    <figure><a href="#"><img src="img/flowers/bouquet/1.jpg" class="flower-image"
                                                 alt="holiwood"></a></figure>
                                 </div>
                                 <div class="product-title-category">
-                                    <h5><a href="#">Bouquet Rose</a></h5>
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">120 AED</div>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
                                 <div class="product-image-category">
-                                    <a href="#"><img src="img/home/flowers/flower-4.jpg" class="img-responsive"
+                                    <a href="#"><img src="img/flowers/bouquet/2.jpg" class="flower-image"
                                             alt="holiwood"></a>
-
                                 </div>
                                 <div class="product-title-category">
-                                    <h5><a href="#">Rose Vase </a></h5>
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">250 AED</div>
                                 </div>
                             </div>
-
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/flowers/bouquet/3.jpg" class="flower-image"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">210 AED</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/flowers/bouquet/4.jpg" class="flower-image"
+                                            alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">240 AED</div>
+                                </div>
+                            </div>
                             <!-- ------------------------------------------------ -->
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
                                 <div class="product-image-category">
-                                    <a href="#"><img src="img/home/flowers/flower-5.jpg" class="img-responsive"
+                                    <a href="#"><img src="img/flowers/bouquet/5.jpg" class="flower-image"
                                             alt="holiwood"></a>
                                 </div>
                                 <div class="product-title-category">
-                                    <h5><a href="#">Jewellery Bouquet</a></h5>
+                                    <h5><a href="#">50 Roses</a></h5>
+                                    <div class="prince">320 AED</div>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
                                 <div class="product-image-category">
-                                    <figure><a href="#"><img src="img/home/flowers/flower-6.jpg" class="img-responsive"
+                                    <figure><a href="#"><img src="img/flowers/bouquet/6.jpg" class="flower-image"
                                                 alt="holiwood"></a></figure>
                                 </div>
                                 <div class="product-title-category">
-                                    <h5><a href="#">Money Bouquet</a></h5>
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">210 AED</div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
                                 <div class="product-image-category">
-                                    <a href="#"><img src="img/home/flowers/flower-7.jpg" class="img-responsive"
+                                    <a href="#"><img src="img/flowers/bouquet/7.jpg" class="flower-image"
                                             alt="holiwood"></a>
                                 </div>
                                 <div class="product-title-category">
-                                    <h5><a href="#">Flower Vase</a></h5>
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">170 AED</div>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
                                 <div class="product-image-category">
-                                    <figure><a href="#"><img src="img/home/flowers/flower-8.jpg" class="img-responsive"
+                                    <figure><a href="#"><img src="img/flowers/bouquet/8.jpg" class="flower-image"
+                                                alt="holiwood"></a>
+                                    </figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">180 AED</div>
+                                </div>
+                            </div>
+                            <a class="custom-button" href="/bouquet.html">Shop Now</a>
+                        </div>
+                        <!-- ------------end new arrial---- -->
+                        <!-- ------tab wedding---------------- -->
+                        <div id="menu-tab-wedding" class="tab-pane fade">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="img/flowers/bouquet/9.jpg" class="flower-image" alt="holiwood">
+                                        </a>
+                                    </figure>
+                            
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+
+                                    <div class="prince">300 AED<s class="strike">250 AED</s></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/flowers/bouquet/10.jpg" class="flower-image"
+                                            alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">160 AED</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/flowers/bouquet/11.jpg" class="flower-image"
                                                 alt="holiwood"></a></figure>
                                 </div>
                                 <div class="product-title-category">
-                                    <h5><a href="#">Money Bouquet</a></h5>
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">200 AED</div>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
                                 <div class="product-image-category">
-                                    <figure><a href="#"><img src="img/home/flowers/flower-9.jpg" class="img-responsive"
+                                    <a href="#"><img src="img/flowers/bouquet/12.jpg" class="flower-image"
+                                            alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">350 AED</div>
+                                </div>
+                            </div>
+                            <!-- ------------------------------------------------ -->
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/flowers/bouquet/13.jpg" class="flower-image"
+                                            alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">300 AED</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/flowers/bouquet/14.jpg" class="flower-image"
                                                 alt="holiwood"></a></figure>
                                 </div>
                                 <div class="product-title-category">
-                                    <h5><a href="#">Mobile Bouquet</a></h5>
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">160 AED</div>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
                                 <div class="product-image-category">
-                                    <figure><a href="#"><img src="img/home/flowers/flower-10.jpg" class="img-responsive"
+                                    <a href="#"><img src="img/flowers/bouquet/15.jpg" class="flower-image"
+                                            alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">200 AED</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/flowers/bouquet/16.jpg" class="flower-image"
                                                 alt="holiwood"></a></figure>
                                 </div>
                                 <div class="product-title-category">
-                                    <h5><a href="#">Letter Flowers</a></h5>
+                                    <h5><a href="#">Flower Bouquet</a></h5>
+                                    <div class="prince">350 AED</div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
-                                <div class="product-image-category">
-                                    <figure><a href="#"><img src="img/home/flowers/flower-11.jpg" class="img-responsive"
-                                                alt="holiwood"></a></figure>
-                                </div>
-                                <div class="product-title-category">
-                                    <h5><a href="#">Baby Shower</a></h5>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
-                                <div class="product-image-category">
-                                    <figure><a href="#"><img src="img/home/flowers/flower-12.jpg" class="img-responsive"
-                                                alt="holiwood"></a></figure>
-                                </div>
-                                <div class="product-title-category">
-                                    <h5><a href="#">Car Arrangements</a></h5>
-                                </div>
-                            </div>
+                            <a class="custom-button" href="/flower-vase.html">Shop Now</a>
 
                         </div>
+                        <!-- ------------end wedding---- -->
+                        <!-- ------------tab other----------------- -->
+                        <div id="menu-tab-other" class="tab-pane fade">
+
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/flowers/bouquet/17.jpg" class="flower-image"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Queen Rose - Pink</a></h5>
+
+                                    <div class="prince">300 AED<s class="strike">250 AED</s></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/flowers/bouquet/18.jpg" class="flower-image"
+                                            alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Bouquet Lavender</a></h5>
+                                    <div class="prince">160 AED</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="img/flowers/bouquet/19.jpg" class="flower-image"
+                                                alt="holiwood">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Fun & Flirty By BloomNation</a></h5>
+                                    <div class="prince">200 AED</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/flowers/bouquet/20.jpg" class="flower-image"
+                                            alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Bouquet Rose</a></h5>
+                                    <div class="prince">350 AED</div>
+                                </div>
+                            </div>
+                            <!-- ------------------------------------------------ -->
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#">
+                                        <img src="img/flowers/bouquet/21.jpg" class="flower-image" alt="holiwood">
+                                    </a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Elegant by BloomNation</a></h5>
+                                    <div class="prince">300 AED<s class="strike">250 AED</s></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/flowers/bouquet/22.jpg" class="flower-image"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Tulipa Floriade - Red</a></h5>
+                                    <div class="prince">160 AED</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <a href="#"><img src="img/flowers/bouquet/23.jpg" class="flower-image"
+                                            alt="holiwood"></a>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Winter White Bouquet</a></h5>
+                                    <div class="prince">200 AED</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-category">
+                                <div class="product-image-category">
+                                    <figure><a href="#"><img src="img/flowers/bouquet/24.jpg" class="flower-image"
+                                                alt="holiwood"></a></figure>
+                                </div>
+                                <div class="product-title-category">
+                                    <h5><a href="#">Rose - Red</a></h5>
+                                    <div class="prince">350 AED</div>
+                                </div>
+                            </div>
+
+                            <a class="custom-button" href="/flower-vase.html">Shop Now</a>
+
+                        </div>
+                        <!-- -------------------------end tab other--------------------- -->
                     </div><!-- end tab content -->
 
                 </div><!-- end row -->
 
             </div>
         </div>
-        <!-- ------------------------- -->
-
 
 
 
@@ -620,23 +561,23 @@
             <h1>Latest Blogs</h1>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 product-blog">
-                    <a href="#"><img src="img/home/blog-1.jpg" class="img-responsive" title="img-blog"
+                    <a href="/blog.html"><img src="img/home/blog-1.jpg" class="img-responsive" title="img-blog"
                             alt="img-holiwood"></a>
-                    <h2><a href="#">Seasonal Flowers: What's in Bloom Throughout the Year</a></h2>
+                    <h2><a href="/blog.html">Seasonal Flowers: What's in Bloom Throughout the Year</a></h2>
                     <p>Seasonal flowers offer the perfect combination of beauty, freshness ...</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 product-blog">
-                    <a href="#"><img src="img/home/blog-2.jpg" class="img-responsive" title="img-blog"
+                    <a href="/blog.html"><img src="img/home/blog-2.jpg" class="img-responsive" title="img-blog"
                             alt="img-holiwood"></a>
 
-                    <h2><a href="#">10 Beautiful Indoor Plants That Double as Air Purifiers</a></h2>
+                    <h2><a href="/blog.html">10 Beautiful Indoor Plants That Double as Air Purifiers</a></h2>
                     <p>Indoor plants not only enhance home aesthetics but also improve air quality ...</p>
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 product-blog">
-                    <a href="#"><img src="img/home/blog-3.jpg" class="img-responsive" title="img-blog"
+                    <a href="/blog.html"><img src="img/home/blog-3.jpg" class="img-responsive" title="img-blog"
                             alt="img-holiwood"></a>
-                    <h2><a href="#">5 DIY Flower Arrangement Ideas to Elevate Your Home Décor</a></h2>
+                    <h2><a href="/blog.html">5 DIY Flower Arrangement Ideas to Elevate Your Home Décor</a></h2>
                     <p>Creating stunning flower arrangements at home is easier than you think ...</p>
 
                 </div>
